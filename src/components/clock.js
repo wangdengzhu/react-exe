@@ -58,12 +58,15 @@ class Index extends Component{
     })
   }
   render(){
+    const con = 'p元素内容'
     return(
       <div>
         <button onClick={this.handClick.bind(this)}>click me</button>
         {
           this.state.show && <Clock/>
         }
+        <button onClick={()=>console.log(this.p.clientHeight)}>获取高度</button>
+        <p className="set-height" ref={(p)=>this.p = p}>{con}</p>
       </div>
     );
   }
