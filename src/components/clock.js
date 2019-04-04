@@ -33,6 +33,7 @@ class Clock extends Component {
 class Index extends Component{
   constructor(){
     super();
+    this.p = 0;
     this.state = {
       show: !0
     }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../assets/css/welcome.css';
+// import NewComponent from './loadStorage';
 class Comment extends Component{
   constructor(){
     super();
